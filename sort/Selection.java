@@ -10,13 +10,32 @@ import java.util.Arrays;
  */
 public class Selection
 {
-  
   /**
    * Returns the sorted array
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-
+    int arrSpot;
+    int lowest = arr[0];
+    int indexOfLowest = 0;
+    for (int i = 0; i < arr.length; i++) {
+        arrSpot = i;
+        lowest = arr[i];
+        indexOfLowest = i;
+        
+        for (int a = i; a < arr.length; a++) {
+            if (arr[a] < lowest) {
+                lowest = arr[a];
+                indexOfLowest = a;
+            }
+        }
+        
+        int temp = arr[i];
+        arr[i] = lowest;
+        arr[indexOfLowest] = temp;
+    }
+    
+    return arr;
   }
   
   public static void main(String[] args) {
