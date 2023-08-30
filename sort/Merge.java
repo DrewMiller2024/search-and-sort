@@ -16,7 +16,11 @@ public class Merge
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-
+    int mid = arr.length/2;
+    int[] l = Arrays.copyOfRange(arr, 0, mid);
+    int[] r = Arrays.copyOfRange(arr, mid/2, mid);
+    
+    return arr;
   }
   
   public static void main(String[] args) {
