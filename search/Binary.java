@@ -30,7 +30,7 @@ public class Binary
                 middle = right/2;
             } else if (arr[middle] < target) {
                 left = middle;
-                middle = left + ((right-left)/2);
+                middle = (left+right)/2;
             } 
             if (left == right-1) {
                 return -1;
