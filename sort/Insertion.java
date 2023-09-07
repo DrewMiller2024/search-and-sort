@@ -23,9 +23,9 @@ public class Insertion
             if (a == 0 || arr[a] >= arr[a-1]) {
                 isLess = false;
             } else {
-                int arrNumber = arr[a-1];
+                int temp = arr[a-1];
                 arr[a-1] = arr[a];
-                arr[a] = arrNumber;
+                arr[a] = temp;
                 
                 a--;    
             }

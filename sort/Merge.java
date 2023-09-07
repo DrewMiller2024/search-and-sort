@@ -92,6 +92,9 @@ public class Merge
 
         // Test the sort
         testSort(sort(arr, 0, arr.length-1));
+        for (int i = 0; i <arr.length;i++) {
+        System.out.print(arr[i] + ", ");
+        }
     }
 
     public static void testSort(int[] arr) {

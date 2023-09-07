@@ -15,11 +15,9 @@ public class Selection
    */
   public static int[] sort(int[] arr) {
     // Your algorithm goes here!
-    int arrSpot;
     int lowest = arr[0];
     int indexOfLowest = 0;
     for (int i = 0; i < arr.length; i++) {
-        arrSpot = i;
         lowest = arr[i];
         indexOfLowest = i;
         
