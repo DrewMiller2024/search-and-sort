@@ -23,7 +23,6 @@ public class Binary
         int middle = arr.length/2;
         while (!foundTarget) {
             if (arr[middle] == target) {
-                foundTarget = true;
                 return middle;
             } else if (arr[middle] > target) {
                 right = middle;
@@ -32,7 +31,7 @@ public class Binary
                 left = middle;
                 middle = (left+right)/2;
             } 
-            if (left == right-1) {
+            if (left == right) {
                 return -1;
             }
         }
